@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main- entry 
+ * main- entry
  * @argc:number
  * @argv: pointer
  * Return:0
@@ -17,6 +17,6 @@ if (argc != 3)
 else
 i = atoi(argv[1]);
 j = atoi(argv[2]);
-printf("%d\n", i * j);
+printf("%d\n", i *j);
 return (0);
 }
