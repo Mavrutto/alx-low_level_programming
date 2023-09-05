@@ -8,19 +8,28 @@
  * Return:0 if null
  */
 char *create_array(unsigned int size, char c)
+		
 {
-unsigned int n;
-char *ptr;
+		
+	char *ptr;
 
-ptr = malloc(sizeof(char) * size);
+	unsigned int n;
 
-if (size == 0)
-	return (NULL);
 
-for (n = 0; n < size; n++)
-	printf("%s\n", ptr);
 
-ptr[n] = c;
+	ptr = malloc(sizeof(char) * size);
 
-return (ptr);
+	if (size == 0 || ptr == NULL)
+
+		return (NULL);
+
+
+
+	for (n = 0; n < size; n++)
+
+		ptr[n] = c;
+
+	return (ptr);
+
 }
+
