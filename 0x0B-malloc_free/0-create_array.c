@@ -8,9 +8,9 @@
  * Return:0 if null
  */
 char *create_array(unsigned int size, char c)
-		
+
 {
-		
+
 	char *ptr;
 
 	unsigned int n;
