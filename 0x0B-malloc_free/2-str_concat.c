@@ -32,7 +32,8 @@ while (s1[i] != '\0')
 while (s2[n] != '\0')
 {
 	ptr[i] = s2[n];
-	i++; n++;
+	i++;
+	n++;
 }
 ptr[i] = '\0';
 return (ptr);
