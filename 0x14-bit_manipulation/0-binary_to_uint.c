@@ -2,8 +2,8 @@
 #include <stddef.h>
 
 /**
- * binary_to_unit - converts a binary number to unsgned int..
- * @B: pointer of strVar..
+ * binary_to_uint - converts a binary number to unsgned int..
+ * @b: pointer of strVar..
  * Return: converted no. or null
  */
 unsigned int binary_to_uint(const char *b)
