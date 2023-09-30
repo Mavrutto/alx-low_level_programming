@@ -10,13 +10,14 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-unsigned long int xor_rslt = n ^ m;
-unsigned int countt = 0;
-while (xor_rslt > 0)
+int j, countt = 0;
+unsigned long int curr;
+unsigned long int exc = n ^ m;
+for (j = 63; j >= 0; i--)
 {
-while (xor_rslt > 0)
-	countt += xor_rslt & 1;
-xor_rslt >>= 1;
+	curr = exc >> j;
+	if (curr & 1)
+		countt++;
 }
 return (countt);
 }
